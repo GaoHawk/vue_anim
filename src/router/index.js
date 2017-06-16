@@ -15,6 +15,10 @@ import Login from '@/components/Login'
 import home from '@/components/home'
 import picker from '@/components/picker'
 import cityList from '@/components/cityList'
+import index from '@/components/index'
+import Anim1 from '@/components/Anim1'
+import Anim2 from '@/components/Anim2'
+import Anim3 from '@/components/Anim3'
 
 Vue.use(Router)
 
@@ -22,8 +26,8 @@ export default new Router({
   routes: [
     {
       path:'/',
-      name:'home',
-      component:home
+      name:'index',
+      component:index
     },
     {
       path:'/picker',
@@ -34,6 +38,21 @@ export default new Router({
       path:'/cityList',
       name:'cityList',
       component:cityList
+    },
+    {
+       path:'/Anim1',
+       name:'Anim1',
+       component:Anim1
+    },
+    {
+       path:'/Anim2',
+       name:'Anim2',
+       component:Anim2
+    },
+    {
+      path:'/Anim3',
+      name:'Anim3',
+      component:Anim3
     }
   ]
 })
